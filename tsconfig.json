@@ -1,0 +1,9 @@
+// Type Script 적용
+// Type Script 컴파일 옵션 구성
+
+{   
+  "compilerOptions" : {     
+    "target": "es5",     
+    "module": "commonjs",  
+  } 
+}

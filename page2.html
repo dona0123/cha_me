@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>뮤지컬 차미 STSYNOPSIS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="chame.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@300&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="chame.js"></script>
+    <script src="chame1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery 사용 -->
+</head>
+
+
+
+<body>
+    <header>
+        <div>
+            <p id="title">뮤지컬 차미</p>
+        </div>
+    </header>
+
+    <hr>
+
+    <nav class="char">
+        <ul class="char">
+            <!--Ajax 사용-->
+            <!--새로고침 없이 다른 페이지에 접속 가능-->
+            <li class="list"><a onclick="fetch('index.html').then(function(response){
+                response.text().then(function(text){
+                    document.querySelector('html').innerHTML = text;
+                })
+            })">#STSYNOPSIS</a></li>
+            <li class="list"><a onclick="fetch('page2.html').then(function(response){
+                response.text().then(function(text){
+                    document.querySelector('html').innerHTML = text;
+                })
+            })">#CHARACTERS</a></li>
+            <li onclick="fetch('page3.html').then(function(response){
+                response.text().then(function(text){
+                    document.querySelector('html').innerHTML = text;
+                })
+            })">#NUMBER LIST</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="three">
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+
+                        </th>
+                        <th>
+                            <p class="char"><strong>#차미호</strong> @CHA_ME</p>
+                            <P class="char">"누구일까 그림자가 되어버린 나는"</P>
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="media/유주혜 차미호 2022.jpg" alt="미호 포스터" width="420px" height="600px">
+                        </td>
+                        <td>
+                            <img src="media/이아진 차미호 2022.jpg" alt="미호 포스터" width="420px" height="600px">
+                        </td>
+                        <td>
+                            <img src="media/홍나현 차미호 2022.jpg" alt="미호 포스터" width="420px" height="600px">
+                        </td>
+                    </tr>
+                </tbody>
+
+                <thead>
+                    <tr>
+                        <th>
+
+                        </th>
+                        <th>
+                            <p class="char"><strong>#차미</strong> @CHA_ME</p>
+                            <P class="char">"이렇게 예쁘고 완벽한 날 불러낸 그 맘 이해해"</P>
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="media/이봄소리 차미 2022.jpg" alt="차미 포스터" width="420px" height="600px">
+                        </td>
+                        <td>
+                            <img src="media/정우연 차미 2022.jpg" alt="차미 포스터" width="420px" height="600px">
+                        </td>
+                        <td>
+                            <img src="media/홍서영 차미 2022.jpg" alt="차미 포스터" width="420px" height="600px">
+                        </td>
+                    </tr>
+                </tbody>
+
+                <thead>
+                    <tr>
+                        <th>
+
+                        </th>
+                        <th>
+                            <p class="char"><strong>#김고대</strong> @???</p>
+                            <P class="char">"내 눈엔 보여 사람들이 보여주지 않는 것"</P>
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="media/기세중 김고대 2022.jpg" alt="고대 포스터" width="420px" height="600px">
+                        </td>
+                        <td>
+                            <img src="media/안지환 김고대 2022.jpg" alt="고대 포스터" width="420px" height="600px">
+                        </td>
+                        <td>
+                            <img src="media/조풍래 김고대 2022.jpg" alt="고대 포스터" width="420px" height="600px">
+                        </td>
+                    </tr>
+                </tbody>
+
+                <thead>
+                    <tr>
+                        <th>
+
+                        </th>
+                        <th>
+                            <p class="char"><strong>#오진혁</strong> @PRINCE</p>
+                            <p class="char">"모두 날 원한다는 건 뻔하긴 해도 당연한 전개"</p>
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="media/박영수 오진혁 2022.jpg" alt="진혁 포스터" width="420px" height="600px">
+                        </td>
+                        <td>
+                            <img src="media/차서원 오진혁 2022.jpg" alt="진혁 포스터" width="420px" height="600px">
+                        </td>
+                        <td>
+                            <img src="media/고상호 오진혁 2022.jpg" alt="진혁 포스터" width="420px" height="600px">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <article></article>
+
+    </section>
+
+
+    <footer>
+        <div class="made">
+            <p><strong>MADE BY PAGE1</strong></p>
+
+            <P><a href="https://www.instagram.com/musical_chame/" target="_blank"><img class="sns"
+                        src="https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_960_720.png"
+                        alt="인스타그램 아이콘" width="50px" height="50px"></a></td>
+                <a href="https://twitter.com/Musical_ChaMe" target="_blank"><img class="sns"
+                        src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="트위터 아이콘" width="50px"
+                        height="50px"></a>
+            </P>
+        </div>
+    </footer>
+    <script src="chame.js"></script>
+    <script src="chame1.js"></script>
+</body>
+
+</html>

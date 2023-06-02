@@ -1,0 +1,428 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #fdbe4d;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 15%;
+}
+
+nav {
+
+  width: 15%;
+  height: 255%;
+  float: left;
+  background-color: #0059b2;
+}
+
+nav.char {
+  width: 15%;
+  height: 410%;
+  float: left;
+  background-color: #0059b2;
+}
+
+nav.three {
+  width: 15%;
+  height: 150%;
+  float: left;
+  background-color: #0059b2;
+}
+
+section.one {
+  position: relative;
+  width: 85%;
+  height: 155%;
+  float: left;
+  background-color: #0059b2;
+}
+
+section.two {
+  position: relative;
+  width: 85%;
+  height: 70%;
+  float: left;
+  background-color: #0059b2;
+}
+
+section.three {
+  position: relative;
+  width: 85%;
+  height: 410%;
+  float: left;
+  background-color: #0059b2;
+}
+
+
+#form {
+  position: relative;
+  width: 85%;
+  height: 30%;
+  float: left;
+  background-color: #0059b2;
+}
+
+#mySection {
+  position: relative;
+  width: 70%;
+  height: 1000px;
+  float: left;
+  background-color: #0059b2;
+
+}
+
+section.number2 {
+  position: relative;
+  width: 85%;
+  height: 90%;
+  float: left;
+  background-color: #0059b2;
+}
+
+
+#mySection {
+  position: relative;
+  width: 85%;
+  height: 150%;
+  float: left;
+  background-color: #0059b2;
+  min-height: 200px;
+  /* 최소 높이 설정 */
+}
+
+footer {
+  width: 100%;
+  height: 15%;
+  clear: both;
+}
+
+p {
+  font-size: larger;
+  text-align: center;
+}
+
+li.list:hover {
+  font-size: 110%;
+}
+
+a:visited {
+  color: white;
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+}
+
+#title {
+  font-size: 60px;
+  text-align: center;
+  color: #0059b2;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+hr {
+  color: #0059b2;
+  border-width: 3px;
+  border-color: #0059b2;
+}
+
+div.bubble1 {
+  position: relative;
+  left: 2.5%;
+  top: 30px;
+  width: 180px;
+  margin: 0px;
+}
+
+p.bubble1 {
+  position: relative;
+  background: #fdbe4d;
+  color: aliceblue;
+  font-weight: 2em;
+  border-radius: .4em;
+  padding-top: 30px;
+  width: 180px;
+  height: 50px;
+  align-items: left;
+}
+
+.bubble1:after {
+  content: '';
+  position: absolute;
+  bottom: 13px;
+  left: 80%;
+  width: 0;
+  height: 0;
+  border: 31px solid transparent;
+  border-top-color: #fdbe4d;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -15.5px;
+  margin-bottom: -31px;
+}
+
+div.bubble2 {
+  position: relative;
+  left: 75%;
+  top: 130px;
+  width: 260px;
+  margin: 0px;
+}
+
+p.bubble2 {
+  position: relative;
+  background: #fdbe4d;
+  color: aliceblue;
+  font-weight: 2em;
+  border-radius: .4em;
+  padding-top: 30px;
+  width: 250px;
+  height: 60px;
+  align-items: left;
+}
+
+.bubble2:after {
+  content: '';
+  position: absolute;
+  bottom: 13px;
+  right: 80%;
+  width: 0;
+  height: 0;
+  border: 31px solid transparent;
+  border-top-color: #fdbe4d;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -15.5px;
+  margin-bottom: -31px;
+}
+
+
+ul {
+  border-right: 1px solid gray;
+  height: 1860px;
+  font-size: 22px;
+  color: white;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+ul.char {
+  border-right: 1px solid gray;
+  height: 2950px;
+  font-size: 22px;
+  color: white;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+ul.number {
+  border-right: 1px solid gray;
+  height: 1000px;
+  font-size: 22px;
+  color: white;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+p.content {
+  color: white;
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+}
+
+div.content {
+
+  text-align: center;
+  position: relative;
+  left: 16.5%;
+  top: 7%;
+  width: 50%;
+}
+
+p.top {
+  color: #fdbe4d;
+  font-size: 22px;
+}
+
+strong.title {
+  font-size: 23px;
+}
+
+div.made {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+img.sns {
+  border-radius: 30%;
+  margin: 6px;
+}
+
+p.char {
+  color: white;
+}
+
+div.table {
+  position: relative;
+  left: 10px;
+}
+
+details {
+  color: white;
+  position: relative;
+  left: 70px;
+  top: 40px;
+  font-size: 16px;
+}
+
+summary {
+  font-size: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  color: white;
+  width: 500px;
+  text-align: center;
+  margin: 0px;
+  position: relative;
+  left: 20%;
+} 
+
+#input1 {
+  width: 300px;
+  height: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid black;
+  background-color: #0059b2;
+  color: white;
+}
+
+#input2 {
+  width: 80px;
+  height: 50px;
+  position: relative;
+  top: 3.5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid black;
+}
+
+p.text {
+  text-align: left;
+  font-size: 16px;
+}
+
+
+
+/*인스타 박스 */
+
+div.post {
+  width: 600px;
+  height: 800px;
+  margin: 0px;
+  position: relative;
+  left: 18.3%;
+  bottom: 10%;
+
+}
+
+.post-container {
+  width: 600px;
+  height: 800px;
+  position: relative;
+  left: 1%;
+  bottom: 2%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  width: 600px;
+  height: 600px;
+}
+
+
+.post-footer {
+  padding: 10px;
+}
+
+.likes {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.description {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.hashtags {
+  color: #13163e;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+.comments {
+  color: #aaa;
+  font-size: 13px;
+}
+
+#phone-frame {
+  background-image: url('./media/아이폰3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  right: 30%;
+  bottom: 4%;
+  width: 940px;
+  height: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 인스타 박스 종료 */

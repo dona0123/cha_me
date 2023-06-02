@@ -1,0 +1,182 @@
+<!-- 
+
+[ 컴퓨터공학전공 20200551 편도나 인터넷기초 과제2 ] 
+
+- "파일명", ["키워드"]: "파일명"에서 "키워드"를 검색하면 해당 조건을 수행한 코드가 나옵니다. 
+
+* 과제 주요 평가사항
+
+1. 자바스크립트의 객체 개념을 이해하고 적용하였는가? (4) : index.html, chame.js, [코어 객체 사용] 
+2. DOM의 개념을 이해하고 적용하였는가 ? (4) : page3.html, chame.js, [DOM 객체 동적 생성]
+3. 서로 다른 이벤트 함수를 3개 이상 사용하고, 이벤트 내용에 맞는 주석처리를 하였는가 ? (6) : index.html, page3.html, chame.js, chame1.js, [이벤트 함수 사용]
+4. 서로 다른 동작을 수행하는 pure 자바스크립트 함수를 3개 이상 사용하고, 함수 내용에 맞는 주석처리를 하였는가 ? (6) : chame.js, chame1.js, [pure 함수 사용]
+
+* 보너스 점수 
+
+1. jQuery 사용 및 동작 가능시 가산점 부여 (1) : index.html, chame.js, [jQuery 사용]
+2. Type Script 적용 및 동작 가능시 가산점 부여 (2) : chame1.ts, chame1.js, tsconfig.json, [Type Script 적용]
+3. Ajax 사용 및 동작 가능시 가산점 부여 (2) : index.html, page2.html, page3.html, [Ajax 사용]
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>뮤지컬 차미 STSYNOPSIS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <link href="chame.css" type="text/css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@300&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="chame.js"></script>
+  <script src="chame1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery 사용 -->
+</head>
+
+
+<body>
+  <header>
+    <div>
+      <p id="title">뮤지컬 차미</p>
+    </div>
+  </header>
+
+  <hr>
+
+  <nav>
+    <ul>
+      <!--Ajax 사용-->
+      <!--새로고침 없이 다른 페이지에 접속 가능-->
+      <li class="list"><a onclick="fetch('index.html').then(function(response){
+        response.text().then(function(text){
+            document.querySelector('html').innerHTML = text;
+        })
+    })">#STSYNOPSIS</a></li>
+      <li class="list"><a onclick="fetch('page2.html').then(function(response){
+        response.text().then(function(text){
+            document.querySelector('html').innerHTML = text;
+        })
+    })">#CHARACTERS</a></li>
+      <li onclick="fetch('page3.html').then(function(response){
+        response.text().then(function(text){
+            document.querySelector('html').innerHTML = text;
+        })
+    })">#NUMBER LIST</a></li>
+
+    </ul>
+  </nav>
+
+
+  <section class="one">
+    <div class="bubble1">
+      <p class="bubble1"><span id="msg1" onclick="msgclick1()"><strong>Follow me!</strong></span></p>
+      <!--jQuery 사용, onclick 이벤트 함수 사용-->
+      <p class="bubble1:after"></p>
+    </div>
+
+    <div class="bubble2">
+      <p class="bubble2"><span id="msg2" onclick="msgclick2()"><strong>꾸준한 사랑을 받아온 뮤지컬!</strong></span></p>
+      <!--jQuery 사용, onclick 이벤트 함수 사용-->
+      <p class="bubble2:after"></p>
+    </div>
+
+
+
+    <div class="post">
+      <div id="phone-frame">
+        <div class="post-container">
+          <div class="post-header">
+            <img class="profile-img" src="media/인스타 프사.jpg" alt="인스타 프사">
+            <div class="username">Cha_Me</div>
+          </div>
+          <img class="post-img" src="media/차미호.jpg" alt="차미호 포스터" onmouseover="over(this)" onmouseout="out(this)">
+          <!--onmouseover, onmouseout 이벤트 함수 사용-->
+          <div class="post-footer">
+            <i class="far fa-heart"></i>
+            <i class="far fa-comment"></i>
+            <i class="far fa-paper-plane"></i>
+            <div class="likes">좋아요 100개</div>
+            <div class="description">기분 좋은 하루</div>
+            <div class="hashtags">#인생은_퍼즐을_맞추는_거야 #하지만_정해진_그림은_없어</div>
+            <div class="hashtags">
+              <script> // 코어 객체 사용 
+                let chadate = new Date(2023, 3, 30);
+                let nowdate = new Date();
+                let day = getDaysDiff(chadate, nowdate);
+                if (day >= 7) {
+                  day = Math.floor(day / 7);
+                  document.write(day + "주 전");
+                } else if (day > 0) {
+                  document.write(day + "일 전");
+                } else {
+                  document.write("오늘");
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="two">
+    <br><br>
+    <div class="content">
+      <p class="content"><strong class="title">SYNOPSIS</strong></p>
+      <p class="top">"SNS속 <strong>'가짜'</strong>가 <strong>'진짜'</strong>로 나타났다!"</p>
+
+      <P class="content">소심한 성격에 인기도 없고 되는 일도 없는 현실을 살고 있는 차미호, 미호는 현실에서 받지 못하는 사랑과 관심 대신 SNS에서 받는 하트에 기쁨을 느낀다. 더 많은 하트를
+        받기 위해 노력하던 미호는 급기야 다른 사람들의 사진을 자기 것처럼 올리게 된다. 그렇게 만들어진 SNS속 자신의 모습을 부러워하는 미호, 그런 미호 앞에 SNS속 미호, 즉 차미(CHA_ME)가
+        현실이 되어 나타난다.</P>
+
+      <P class="content">차미는 미호의 심정을 모두 이해한다면서 사랑도 이루어 주고, 인생도 바꾸어 주겠다고 제안한다. 차미는 미호 대신 나서서 미호가 원하던 것들을 손쉽게 쟁취해가고, 미호는
+        기뻐하면서도 알 수 없는 불안을 느낀다.</P>
+
+      <P class="content">한편 그런 미호에게 진실하게 다가와주는 김고대와 미호의 짝사랑 상대였던 진혁이 미호와 차미의 관계를 알게 되면서 미호와 차미의 동맹 관계는 위태롭게 변해가는데...</P>
+    </div>
+  </section>
+
+
+  <section id="form">
+    <fieldset>
+      <legend><strong>의견을 보내주세요!</strong></legend>
+      만약 차미처럼 '완벽한 나'가 나타난다면 어떻게 하고 싶나요? <br>
+      <form action="http://localhost/process.php" method="post" target="_blank">
+        <input id="input1" type="text" name="opinion">
+        <input id="input2" type="submit" value="전송">
+      </form>
+    </fieldset>
+  </section>
+
+
+
+
+  <footer>
+    <div class="made">
+      <p><strong>MADE BY PAGE1</strong></p>
+
+      <P><a href="https://www.instagram.com/musical_chame/" target="_blank"><img class="sns"
+            src="https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_960_720.png" alt="인스타그램 아이콘"
+            width="50px" height="50px"></a></td>
+        <a href="https://twitter.com/Musical_ChaMe" target="_blank"><img class="sns"
+            src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="트위터 아이콘" width="50px" height="50px"></a>
+      </P>
+    </div>
+  </footer>
+  <script src="chame.js"></script>
+  <script src="chame1.js"></script>
+</body>
+
+</html>

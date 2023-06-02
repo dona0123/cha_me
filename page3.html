@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>뮤지컬 차미 STSYNOPSIS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="chame.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@300&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="chame.js"></script>
+    <script src="chame1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery 사용 -->
+</head>
+
+
+
+<body>
+    <header>
+        <div>
+            <p id="title">뮤지컬 차미</p>
+        </div>
+    </header>
+
+    <hr>
+
+    <nav class="three">
+        <ul class="number">
+            <!--Ajax 사용-->
+            <!--새로고침 없이 다른 페이지에 접속 가능-->
+            <li class="list"><a onclick="fetch('index.html').then(function(response){
+        response.text().then(function(text){
+            document.querySelector('html').innerHTML = text;
+        })
+    })">#STSYNOPSIS</a></li>
+            <li class="list"><a onclick="fetch('page2.html').then(function(response){
+        response.text().then(function(text){
+            document.querySelector('html').innerHTML = text;
+        })
+    })">#CHARACTERS</a></li>
+            <li onclick="fetch('page3.html').then(function(response){
+        response.text().then(function(text){
+            document.querySelector('html').innerHTML = text;
+        })
+    })">#NUMBER LIST</a></li>
+
+        </ul>
+    </nav>
+
+
+    <section id="mySection">
+        <ul class="number">
+            <!--DOM 객체 동적 생성, onclick 이벤트 함수 사용-->
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.1 좋아요</summary>
+                    <p class="text">" 다들 나를 봐요 이 네모난 세상속 나 "</p>
+                    <p class="text">미호가 등장하며 부르는 넘버. 취업, 연애 등등 모든 일이 잘 풀리지 않는 미호는 다른 사람들에 비해 초라해 보이는 자신을 달래기 위해 SNS의
+                        좋아요에 위로를 받는다.</p>
+                </details>
+            </li>
+
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.2 내 이름은 차미</summary>
+                    <p class="text">" 그러니 팔로 미 차미~ "</p>
+                    <p class="text">차미가 등장하며 부르는 넘버. 미호와 달리 완벽한 모습을 보인다.</p>
+                </details>
+            </li>
+
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.3 레디메이드 인생</summary>
+                    <p class="text"> " 정해진 길을 따라 걸어도, 때로는 숨차게 달려도, 난 미완성의 기성품, 그 노력의 의미는 무엇인가 "</p>
+                    <p class="text">채만식의 &lt;레디메이드 인생&gt;을 주제로 한 넘버. 틀에 박힌 세상의 기준에 맞추지만 선택받지 못하는 임자없는 기성품의 비애를 노래한다.</p>
+                </details>
+            </li>
+
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.4 이해해</summary>
+                    <p class="text">" 이제 난 너야 내 꿈을 이뤄줄 너야 나도 봤어 그를 갖고 싶은 그 맘 이해해 "</p>
+                    <p class="text">차미와 미호가 처음으로 만나 부르는 넘버. 차미가 자신의 SNS속에서 나왔다는 사실을 믿지 못하는 미호와, 그런 미호에게 완벽해지고 싶은 너의 마음을
+                        이해한다고 말한다.</p>
+                </details>
+            </li>
+
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.5 재미없어</summary>
+                    <p class="text">" 재미없어 똑같은 사람들 "</p>
+                    <p class="text">진혁이 등장하며 부르는 넘버. 그는 자타공인 완벽한 남자이지만 틀에 박힌 연애와 틀에 박힌 사람들에게 질린 모습을 보인다.</p>
+                </details>
+            </li>
+
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.6 모두 원해</summary>
+                    <p class="text">" 사랑은 퍼즐을 맞추는 거야, 네가 탐내던 조각들은 모두 내 안에 있어! "</p>
+                    <p class="text">완벽한 차미를 모두가 원하는 건 당연한 것이라고 말한다.</p>
+                </details>
+            </li>
+
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.7 내 눈엔 보여</summary>
+                    <p class="text">" 내 눈엔 그 사람이 이상해 보여. "</p>
+                    <p class="text">어릴 때부터 감이 좋아 사람들이 보여주지 않는 것도 볼 줄 알았던 고대. 그런 고대의 눈에는 진혁이 이상해 보인다고 말한다.</p>
+                </details>
+            </li>
+
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.8 우리는 하나야</summary>
+                    <p class="text">" 난 널 위해 존재해 너도 날 위해 존재해 우리는 하나야 "</p>
+                    <p class="text">차미로 인해 완벽한 삶을 쟁취했지만, 정작 미호 본인은 밖으로 맘껏 나가지도 못한다. 결국 차미에게 반발하지만 차미는 모든 건 우리를 위한 것이며
+                        우리는 하나라고 말한다.</p>
+                </details>
+            </li>
+
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.9 누구일까</summary>
+                    <p class="text">" 누구일까 그림자가 되어버린 나는 "</p>
+                    <p class="text">차미에게 휘말린 미호는 결국 다른 사람들에게 들키지 않기 위해 집 안에만 있는다. 자신의 삶의 주인공은 누구인지에 대해 의문을 갖지만..</p>
+                </details>
+            </li>
+
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.10 Hey hey hey</summary>
+                    <p class="text">" 다 부러워하지 누가 그녀를 몰라 "/p>
+                    <p class="text">차미는 결국 미호 대신 회사에 취업까지 성공해 슈퍼스터 신입이 된다. 모두가 그녀의 완벽함과 유능함을 좋아한다.</p>
+                </details>
+            </li>
+
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.11 너를 원해</summary>
+                    <p class="text">" 난 너를 원해 있는 그대로의 너 "</p>
+                    <p class="text">자신의 심정을 고대에게 털어놓는 미호. 미호의 이야기를 들은 고대는 모두가 원하는 네가 아닌 있는 그대로의 너를 원한다며 자신의 마음을 전한다.</p>
+                </details>
+            </li>
+
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.12 게임의 규칙</summary>
+                    <p class="text">" 그러니 follow the rule 게임의 룰을 따라 "</p>
+                    <p class="text">차미와 미호의 관계를 알게 된 진혁은 차미에게 뻔하지만 중요한 게임의 규칙에 대해 알려준다.</p>
+                </details>
+            </li>
+
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.13 Hey hey hey reprise</summary>
+                    <p class="text">" 이 게임에서 넌 루저 "</p>
+                    <p class="text">고대와 진혁의 랩배틀. 진혁은 미호를 지키고자 하는 고대에게 이 게임에서 이길 수 없을 것이라 하며 비웃는다.</p>
+                </details>
+            </li>
+
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.14 이해 못 해</summary>
+                    <p class="text">" 난 너를, 난 너를, 이해 못 해. 넌 내가 아니니까! "</p>
+                    <p class="text">결국 갈등을 빚는 미호와 차미. 둘은 자신이 살고 싶은 삶을 위해 다툰다.</p>
+                </details>
+            </li>
+
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.15 스크래치</summary>
+                    <p class="text">" 부딪혀 상처내 긁어내 봐, 그 틈으로 너의 색이 보일거야. "</p>
+                    <p class="text">자신을 진심으로 사랑해야 하는 난관에 놓인 미호. 그런 미호에게 고대는 검은 도화지를 긁어내 다양한 색을 표현하는 스크래치 기법에 비유하여 자기 자신을
+                        사랑하는 법을 알려준다.</p>
+                </details>
+            </li>
+
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.16 모두 원해 2</summary>
+                    <p class="text">" 그래 모두 너를 원해 하지만 내가 아냐 "</p>
+                    <p class="text">더 이상 차미를 바라보지 않고 스스로를 사랑해 보기로 결심한 미호. 차미는 그런 미호의 변화에 당황한다.</p>
+                </details>
+            </li>
+
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.17 미안하다는 말</summary>
+                    <p class="text">" 아니 넌 네 삶의 주인공 내가 내 삶의 주인공이듯 "</p>
+                    <p class="text">차미, 미호, 진혁, 고대는 서로 솔직한 마음을 털어놓으며 서로를 위로한다.</p>
+                </details>
+            </li>
+
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.18 모두 원해 3</summary>
+                    <p class="text">" 빠진 조각을 찾을 필요 없어, 네 퍼즐은 채우는 게 아니라 그리는 것 "</p>
+                    <p class="text">차미는 마지막으로 미호에게 인생은 퍼즐을 맞추는 것이지만, 그 틀에 맞춰 살 필요는 없다며 미호의 삶을 응원해준다.</p>
+                </details>
+            </li>
+
+            <li onclick='dom()'>
+                <details>
+                    <summary>🎵 No.19 내 이름은 미호</summary>
+                    <p class="text">" 내 이름은 미호 난 여전히 차미호. "</p>
+                    <p class="text">모든 것이 원래대로 돌아왔지만 이제 미호는 다르다. 진짜 자기 자신으로 살기로 결심한 미호는 이제 예전과 다르다.</p>
+                </details>
+            </li>
+        </ul>
+    </section>
+
+
+
+    <footer id="parent">
+        <div class="made" id="child">
+            <p><strong>MADE BY PAGE1</strong></p>
+
+            <P><a href="https://www.instagram.com/musical_chame/" target="_blank"><img class="sns"
+                        src="https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_960_720.png"
+                        alt="인스타그램 아이콘" width="50px" height="50px"></a></td>
+                <a href="https://twitter.com/Musical_ChaMe" target="_blank"><img class="sns"
+                        src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="트위터 아이콘" width="50px"
+                        height="50px"></a>
+            </P>
+        </div>
+    </footer>
+    <script src="chame.js"></script>
+    <script src="chame1.js"></script>
+</body>
+
+</html>
